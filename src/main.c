@@ -121,16 +121,16 @@ int main(void) {
 		_delay_ms(MAKEFILE_DEBOUNCE_TIME);
 
 		// update LEDs
-//		if (keyboard_leds & (1<<0)) { kb_led_num_on(); }
-//		else { kb_led_num_off(); }
-//		if (keyboard_leds & (1<<1)) { kb_led_caps_on(); }
-//		else { kb_led_caps_off(); }
-//		if (keyboard_leds & (1<<2)) { kb_led_scroll_on(); }
-//		else { kb_led_scroll_off(); }
-//		if (keyboard_leds & (1<<3)) { kb_led_compose_on(); }
-//		else { kb_led_compose_off(); }
-//		if (keyboard_leds & (1<<4)) { kb_led_kana_on(); }
-//		else { kb_led_kana_off(); }
+		if (keyboard_leds & (1<<0)) { kb_led_num_on(); }
+		else { kb_led_num_off(); }
+		if (keyboard_leds & (1<<1)) { kb_led_caps_on(); }
+		else { kb_led_caps_off(); }
+		if (keyboard_leds & (1<<2)) { kb_led_scroll_on(); }
+		else { kb_led_scroll_off(); }
+		if (keyboard_leds & (1<<3)) { kb_led_compose_on(); }
+		else { kb_led_compose_off(); }
+		if (keyboard_leds & (1<<4)) { kb_led_kana_on(); }
+		else { kb_led_kana_off(); }
 	}
 
 	return 0;
