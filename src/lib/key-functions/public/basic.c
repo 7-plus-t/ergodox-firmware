@@ -170,6 +170,7 @@ static void layer_pop(uint8_t local_id) {
  */
 void kbfun_layer_push_1(void) {
 	layer_push(1);
+    _kb_led_6_on();
 }
 
 /*
@@ -222,6 +223,7 @@ void kbfun_layer_sticky_1  (void) {
  */
 void kbfun_layer_pop_1(void) {
 	layer_pop(1);
+    _kb_led_6_off();
 }
 
 /*
@@ -234,6 +236,7 @@ void kbfun_layer_pop_1(void) {
  */
 void kbfun_layer_push_2(void) {
 	layer_push(2);
+    _kb_led_1_on();
 }
 
 /*
@@ -258,6 +261,7 @@ void kbfun_layer_sticky_2  (void) {
  */
 void kbfun_layer_pop_2(void) {
 	layer_pop(2);
+    _kb_led_1_off();
 }
 
 /*
@@ -270,6 +274,7 @@ void kbfun_layer_pop_2(void) {
  */
 void kbfun_layer_push_3(void) {
 	layer_push(3);
+    _kb_led_2_on();
 }
 
 /*
@@ -294,6 +299,7 @@ void kbfun_layer_sticky_3  (void) {
  */
 void kbfun_layer_pop_3(void) {
 	layer_pop(3);
+    _kb_led_2_off();
 }
 
 /*
@@ -306,6 +312,7 @@ void kbfun_layer_pop_3(void) {
  */
 void kbfun_layer_push_4(void) {
 	layer_push(4);
+    _kb_led_3_on();
 }
 
 /*
@@ -330,6 +337,7 @@ void kbfun_layer_sticky_4  (void) {
  */
 void kbfun_layer_pop_4(void) {
 	layer_pop(4);
+    _kb_led_3_off();
 }
 
 /*
