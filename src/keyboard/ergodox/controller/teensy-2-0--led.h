@@ -29,6 +29,7 @@
 	#define _kb_led_3_off()          (DDRB &= ~(1<<7))
 	#define _kb_led_3_set(n)         (OCR1C = (uint8_t)(n))
 	#define _kb_led_3_set_percent(n) (OCR1C = (uint8_t)((n) * 0xFF))
+
     #define _kb_led_6_on()           (PORTD |=  (1<<6))
     #define _kb_led_6_off()          (PORTD &= ~(1<<6))
 

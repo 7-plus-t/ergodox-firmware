@@ -37,7 +37,11 @@
 
 	#ifndef kb_led_state_ready
 	#define kb_led_state_ready() do {				\
-			_kb_led_all_off();				\
+			_kb_led_all_off();	\
+            _delay_ms(333);	\
+            _kb_led_all_on();	\
+            _delay_ms(333);	\
+            _kb_led_all_off();	\
 			_kb_led_all_set_percent(MAKEFILE_LED_BRIGHTNESS); \
 			} while(0)
 	#endif
@@ -80,6 +84,66 @@
 	#ifndef kb_led_kana_off
 	#define kb_led_kana_off()
 	#endif
+    #ifndef kb_led_layer1_on
+    #define kb_led_layer1_on()
+    #endif
+    #ifndef kb_led_layer1_off
+    #define kb_led_layer1_off()
+    #endif
+    #ifndef kb_led_layer2_on
+    #define kb_led_layer2_on()
+    #endif
+    #ifndef kb_led_layer2_off
+    #define kb_led_layer2_off()
+    #endif
+    #ifndef kb_led_layer3_on
+    #define kb_led_layer3_on()
+    #endif
+    #ifndef kb_led_layer3_off
+    #define kb_led_layer3_off()
+    #endif
+    #ifndef kb_led_layer4_on
+    #define kb_led_layer4_on()
+    #endif
+    #ifndef kb_led_layer4_off
+    #define kb_led_layer4_off()
+    #endif
+    #ifndef kb_led_layer5_on
+    #define kb_led_layer5_on()
+    #endif
+    #ifndef kb_led_layer5_off
+    #define kb_led_layer5_off()
+    #endif
+    #ifndef kb_led_layer6_on
+    #define kb_led_layer6_on()
+    #endif
+    #ifndef kb_led_layer6_off
+    #define kb_led_layer6_off()
+    #endif
+    #ifndef kb_led_layer7_on
+    #define kb_led_layer7_on()
+    #endif
+    #ifndef kb_led_layer7_off
+    #define kb_led_layer7_off()
+    #endif
+    #ifndef kb_led_layer8_on
+    #define kb_led_layer8_on()
+    #endif
+    #ifndef kb_led_layer8_off
+    #define kb_led_layer8_off()
+    #endif
+    #ifndef kb_led_layer9_on
+    #define kb_led_layer9_on()
+    #endif
+    #ifndef kb_led_layer9_off
+    #define kb_led_layer9_off()
+    #endif
+    #ifndef kb_led_layer10_on
+    #define kb_led_layer10_on()
+    #endif
+    #ifndef kb_led_layer10_off
+    #define kb_led_layer10_off()
+    #endif
 
 
 #endif

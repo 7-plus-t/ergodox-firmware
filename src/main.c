@@ -52,8 +52,7 @@ bool    main_arg_trans_key_pressed;
  */
 int main(void) {
 	kb_init();  // does controller initialization too
-    PORTD &= ~(1<<6);
-    DDRD  |=  (1<<6);
+
 	kb_led_state_power_on();
 
 	usb_init();
